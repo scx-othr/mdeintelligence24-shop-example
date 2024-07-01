@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_4t4SsDR0Ee-rv6ckyplsMA" type="Valkyrie UML2 Paketdiagramm" name="shop.packagediag" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_6CdgADR0Ee-rv6ckyplsMA" type="2002" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_6CfVMDR0Ee-rv6ckyplsMA" type="5006"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_6CfVMTR0Ee-rv6ckyplsMA" type="5013"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_6Cf8QDR0Ee-rv6ckyplsMA" type="7001">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_6Cf8QTR0Ee-rv6ckyplsMA" showTitle="true"/>
+    </children>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_6CdgATR0Ee-rv6ckyplsMA"/>
+    <element xmi:type="uml:Package" href="../shop.uml#_6CTH8DR0Ee-rv6ckyplsMA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6CdgAjR0Ee-rv6ckyplsMA" x="87" y="41"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_4t4SsTR0Ee-rv6ckyplsMA"/>
+  <element xmi:type="uml:Model" href="../shop.uml#_4sjdADR0Ee-rv6ckyplsMA"/>
+</notation:Diagram>

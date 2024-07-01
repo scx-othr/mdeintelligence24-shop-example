@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_4sjdADR0Ee-rv6ckyplsMA" name="shop">
+  <elementImport xmi:id="_4xYSoDR0Ee-rv6ckyplsMA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_4xfnYDR0Ee-rv6ckyplsMA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+  </elementImport>
+  <elementImport xmi:id="_4xfnYTR0Ee-rv6ckyplsMA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+  </elementImport>
+  <elementImport xmi:id="_4xfnYjR0Ee-rv6ckyplsMA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+  </elementImport>
+  <elementImport xmi:id="_4xfnYzR0Ee-rv6ckyplsMA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+  </elementImport>
+  <elementImport xmi:id="_4xfnZDR0Ee-rv6ckyplsMA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_4xfnZTR0Ee-rv6ckyplsMA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+  </elementImport>
+  <elementImport xmi:id="_4xfnZjR0Ee-rv6ckyplsMA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+  </elementImport>
+  <elementImport xmi:id="_4xmVEDR0Ee-rv6ckyplsMA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_4xmVETR0Ee-rv6ckyplsMA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_4xmVEjR0Ee-rv6ckyplsMA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+  </elementImport>
+  <elementImport xmi:id="_4xmVEzR0Ee-rv6ckyplsMA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_4xm8IDR0Ee-rv6ckyplsMA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_6CTH8DR0Ee-rv6ckyplsMA" name="mdeintelligence">
+    <packagedElement xmi:type="uml:Class" xmi:id="_-s0WUDR0Ee-rv6ckyplsMA" name="Shop" visibility="public">
+      <ownedAttribute xmi:id="_CsqQATR1Ee-rv6ckyplsMA" name="articles" type="__UYFkDR0Ee-rv6ckyplsMA" aggregation="composite" association="_CsiUMDR1Ee-rv6ckyplsMA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CsqQAjR1Ee-rv6ckyplsMA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CsqQAzR1Ee-rv6ckyplsMA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_DMaHEjR1Ee-rv6ckyplsMA" name="customers" type="_ADaV0DR1Ee-rv6ckyplsMA" aggregation="composite" association="_DMY48DR1Ee-rv6ckyplsMA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DMaHEzR1Ee-rv6ckyplsMA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DMauIDR1Ee-rv6ckyplsMA" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_OXeRUDR1Ee-rv6ckyplsMA" name="registerCustomers" visibility="public">
+        <ownedComment xmi:id="_r2g7sDSVEe-VWs6DRmh5aQ">
+          <body>If a customer with the same email already&#xD;
+exists, do not add and return false. Otherwise,&#xD;
+add and return true.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_RJNZIDR1Ee-rv6ckyplsMA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_TBr9sDR1Ee-rv6ckyplsMA" name="cust" type="_ADaV0DR1Ee-rv6ckyplsMA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_yogz8DSVEe-VWs6DRmh5aQ" name="findCustomer" visibility="public">
+        <ownedParameter xmi:id="_0a7z0DSVEe-VWs6DRmh5aQ" type="_ADaV0DR1Ee-rv6ckyplsMA" direction="return"/>
+        <ownedParameter xmi:id="_1OPgEDSVEe-VWs6DRmh5aQ" name="email">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_4oKCMDSVEe-VWs6DRmh5aQ" name="findArticle" visibility="public">
+        <ownedParameter xmi:id="_58q-EDSVEe-VWs6DRmh5aQ" type="__UYFkDR0Ee-rv6ckyplsMA" direction="return"/>
+        <ownedParameter xmi:id="_59YvwDSVEe-VWs6DRmh5aQ" name="ean">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="__UYFkDR0Ee-rv6ckyplsMA" name="Article" visibility="public">
+      <ownedAttribute xmi:id="_Csi7QDR1Ee-rv6ckyplsMA" name="shop" type="_-s0WUDR0Ee-rv6ckyplsMA" association="_CsiUMDR1Ee-rv6ckyplsMA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cspo8DR1Ee-rv6ckyplsMA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CsqQADR1Ee-rv6ckyplsMA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_80TSgDSVEe-VWs6DRmh5aQ" name="ean" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ARz7MDSWEe-VWs6DRmh5aQ" name="name" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_B0nKsDSWEe-VWs6DRmh5aQ" name="currentPrice" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_DyQjIDSWEe-VWs6DRmh5aQ" name="itemsInStock" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_GWD8oDSWEe-VWs6DRmh5aQ" name="Article" visibility="public">
+        <ownedComment xmi:id="_Tk6jkDSWEe-VWs6DRmh5aQ">
+          <body>Provided ean must be a fully valid European&#xD;
+Article Number according to the offical definition.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_IOF1QDSWEe-VWs6DRmh5aQ" name="ean">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_JB530DSWEe-VWs6DRmh5aQ" name="name">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ADaV0DR1Ee-rv6ckyplsMA" name="Customer" visibility="public">
+      <ownedAttribute xmi:id="_DMZgADR1Ee-rv6ckyplsMA" name="shop" type="_-s0WUDR0Ee-rv6ckyplsMA" association="_DMY48DR1Ee-rv6ckyplsMA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DMaHEDR1Ee-rv6ckyplsMA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DMaHETR1Ee-rv6ckyplsMA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Dyw8cDR1Ee-rv6ckyplsMA" name="orders" type="_A3UfADR1Ee-rv6ckyplsMA" aggregation="composite" association="_DyugMDR1Ee-rv6ckyplsMA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dyw8cTR1Ee-rv6ckyplsMA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dyw8cjR1Ee-rv6ckyplsMA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_qk8wsDSWEe-VWs6DRmh5aQ" name="name" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_rayzkDSWEe-VWs6DRmh5aQ" name="email" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_tRIDEDSWEe-VWs6DRmh5aQ" name="Customer" visibility="public">
+        <ownedComment xmi:id="_4gCykDSWEe-VWs6DRmh5aQ">
+          <body>Provided email must be a valid email address.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_wdnNMDSWEe-VWs6DRmh5aQ" name="name">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ybU3EDSWEe-VWs6DRmh5aQ" name="email">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_uuvQkDSWEe-VWs6DRmh5aQ" name="placeOrder" visibility="public">
+        <ownedComment xmi:id="_-qUjgDSWEe-VWs6DRmh5aQ">
+          <body>For every item of the order, check if enough&#xD;
+items are available in stock. If so, add to orders and update the items in stock. Return whether order was added.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_veWvoDSWEe-VWs6DRmh5aQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_7II2MDSWEe-VWs6DRmh5aQ" name="order" type="_A3UfADR1Ee-rv6ckyplsMA"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_A3UfADR1Ee-rv6ckyplsMA" name="Order" visibility="public">
+      <ownedAttribute xmi:id="_DyvuUDR1Ee-rv6ckyplsMA" name="customer" type="_ADaV0DR1Ee-rv6ckyplsMA" association="_DyugMDR1Ee-rv6ckyplsMA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DywVYDR1Ee-rv6ckyplsMA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DywVYTR1Ee-rv6ckyplsMA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EKNMEjR1Ee-rv6ckyplsMA" name="items" type="_Bmc14DR1Ee-rv6ckyplsMA" aggregation="composite" association="_EKMlADR1Ee-rv6ckyplsMA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EKNMEzR1Ee-rv6ckyplsMA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EKNMFDR1Ee-rv6ckyplsMA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ZV8uEDSWEe-VWs6DRmh5aQ" name="orderId" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_bMTLsDSWEe-VWs6DRmh5aQ" name="addItem" visibility="public">
+        <ownedComment xmi:id="_hhfMIDSWEe-VWs6DRmh5aQ">
+          <body>If an order referring to the same article already&#xD;
+exists, reuse that one updating the quantity.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_doStADSWEe-VWs6DRmh5aQ" name="item" type="_Bmc14DR1Ee-rv6ckyplsMA"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ipZ2cDSWEe-VWs6DRmh5aQ" name="totalPrice" visibility="public">
+        <ownedParameter xmi:id="_jmdUkDSWEe-VWs6DRmh5aQ" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_lfB_wDSWEe-VWs6DRmh5aQ" name="Order" visibility="public">
+        <ownedComment xmi:id="_n4rXsDSWEe-VWs6DRmh5aQ">
+          <body>Generate a random UUID for the orderId.</body>
+        </ownedComment>
+        <ownedComment xmi:id="_oHeosDSWEe-VWs6DRmh5aQ">
+          <body>Generate a random UUID for the orderId.</body>
+        </ownedComment>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Bmc14DR1Ee-rv6ckyplsMA" name="OrderItem" visibility="public">
+      <ownedAttribute xmi:id="_EKMlATR1Ee-rv6ckyplsMA" name="order" type="_A3UfADR1Ee-rv6ckyplsMA" association="_EKMlADR1Ee-rv6ckyplsMA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EKNMEDR1Ee-rv6ckyplsMA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EKNMETR1Ee-rv6ckyplsMA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FaP3oDR1Ee-rv6ckyplsMA" name="article" type="__UYFkDR0Ee-rv6ckyplsMA" association="_FaPQkDR1Ee-rv6ckyplsMA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FaP3oTR1Ee-rv6ckyplsMA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FaP3ojR1Ee-rv6ckyplsMA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Ws3zADSWEe-VWs6DRmh5aQ" name="quantity" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CsiUMDR1Ee-rv6ckyplsMA" memberEnd="_Csi7QDR1Ee-rv6ckyplsMA _CsqQATR1Ee-rv6ckyplsMA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_DMY48DR1Ee-rv6ckyplsMA" memberEnd="_DMZgADR1Ee-rv6ckyplsMA _DMaHEjR1Ee-rv6ckyplsMA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_DyugMDR1Ee-rv6ckyplsMA" memberEnd="_DyvuUDR1Ee-rv6ckyplsMA _Dyw8cDR1Ee-rv6ckyplsMA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EKMlADR1Ee-rv6ckyplsMA" memberEnd="_EKMlATR1Ee-rv6ckyplsMA _EKNMEjR1Ee-rv6ckyplsMA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FaPQkDR1Ee-rv6ckyplsMA" memberEnd="_FaPQkTR1Ee-rv6ckyplsMA _FaP3oDR1Ee-rv6ckyplsMA">
+      <ownedEnd xmi:id="_FaPQkTR1Ee-rv6ckyplsMA" name="orderitem" type="_Bmc14DR1Ee-rv6ckyplsMA" association="_FaPQkDR1Ee-rv6ckyplsMA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FaPQkjR1Ee-rv6ckyplsMA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FaPQkzR1Ee-rv6ckyplsMA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
